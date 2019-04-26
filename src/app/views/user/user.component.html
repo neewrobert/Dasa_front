@@ -1,0 +1,37 @@
+<div class="boxUser" id="boxUser">
+  <div class="sideUser" id="sideUser">
+    <div class="boxFlexible" id="boxFlexible">
+      <ol class="listUserDetails" id="userListDetails">
+        <li class="imgList" id="imgList">
+          <img class="img" src={{user.avatar_url}} alt="Avatar do usuario">
+        </li>
+        <li class="name" id="name">
+          {{user.name}}
+        </li>
+        <li class="login" id="login">
+          <fa-icon class="icon" [icon]="faUser"></fa-icon> {{user.login}}
+        </li>
+        <li class="company" id="company">
+          <fa-icon class="icon" [icon]="faBuilding"></fa-icon> {{user.company}}
+        </li>
+        <li class="location" id="location">
+          <fa-icon class="icon" [icon]="faMapMarkedAlt"></fa-icon> {{user.location}}
+        </li>
+      </ol>
+    </div>
+  </div>
+  <div class="repoBox" id="repoBox">
+    <h2 class="titleRepo" id="titleRepo">Repositórios</h2>
+
+    <table class="tableResponsible" id="tableResponsible">
+      <tr class="headerTable" id="headerTable">
+        <th class="linhaRepo">Repo</th>
+        <th><fa-icon class="icon" [icon]="faStar"></fa-icon></th>
+      </tr>
+      <tr *ngFor="let repo of repos; let i = index" class="bodyTable" id="bodyTable">
+        <td class="linhaName">{{repo.name}}</td>
+        <td class="linha">{{repo.stargazers_count}}</td>
+      </tr>
+    </table>
+  </div>
+</div>

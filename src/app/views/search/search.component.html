@@ -1,0 +1,21 @@
+<div class="fullBox" id="fullBox"> 
+  
+  <h3 class="title">Pesquisa de Usuário</h3>
+
+  <div class="boxSearch" id="boxSearch">
+
+    <div *ngIf="userNotFound" class="userNotFound" id="userNotFound">
+      <span class="notFound" id="notFound">Usuário não encontrado!</span>
+    </div>
+
+    <div *ngIf="includeUser" class="includeUser warning" id="includeUser">
+      <span class="includeUserLetter" id="includeUserLetter">Insira ao menos uma (1) letra!</span>
+    </div>
+
+    <form class="formSearch" id="formaSearch">
+      <input [(ngModel)]="name" on-focus="turnOffLight()" placeholder="Nome do usuário" type="text" name="InputSearch" class="inputSearch child" id="inputSearch">
+    
+      <button type="button" (click)="search()" class="buttonSearch child"><fa-icon class="searchIcon" [icon]="faSearch"></fa-icon>SEARCH</button>
+    </form>
+  </div>
+</div>
