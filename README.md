@@ -5,6 +5,17 @@ Projeto em Angular que atraves de um nome de usuario, mostra seus dados basicos 
 
 Esse projeto foi gerado com: [Angular CLI](https://github.com/angular/angular-cli) version 7.3.3.
 
+## Demo Aplicacao
+
+Acesso a aplicacao: [DASA_FRONT](https://dasafront.herokuapp.com/)
+
+A aplicacao é totalmente responsiva e pode ser acessada de qualquer dispositivo mobile.
+
+### Usando a aplicacao
+
+Basta acessar o link acima, e no campo 'nome usuario' basta inserir qualquer nome valido de usuario do GIT
+
+
 ## Instalacao
 
 Rode o comando `npm install` para instalar todas as dependecias do package.json. 
